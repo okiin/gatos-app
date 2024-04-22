@@ -21,10 +21,14 @@ export default function Cats() {
     }, []);
     return (
         <div>
-            <h1>Cats</h1>
-            <Link href="/">Home</Link>
+            <div className="p-4 bg-gradient-to-r from-cyan-800 from-10% via-sky-800 via-30% to-blue-950 to-90% ..." >
+            <h1 className="text-3xl font-bold font-serif text-center " >Cats</h1>
+            </div>
             <div className="flex justify-center">
-                    <button
+            <Link href="/" className="text-center w-32 mt-4 rounded p-2 bg-slate-300 font-bold" >Home</Link>
+            </div>
+            <div className="flex justify-center">
+                    <button className="w-32 mt-4 rounded p-2 bg-slate-300 font-bold" 
                         onClick={() => {
                             fetchCats();
                         }}
@@ -35,7 +39,7 @@ export default function Cats() {
             <div className="flex flex-wrap gap-4 justify-center mt-4 items-center p-4 ">
                 {cats.map((cat) => (
                     <div key={cat.id}>
-                        <img className="w-64 h-64" src={cat.url} alt={cat.id} />
+                        <img className="w-60 h-60" src={cat.url} alt={cat.id} />
                     </div>
                 ))}
             </div>
