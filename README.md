@@ -38,4 +38,4 @@ ou
 
  ### ------------------------------------------------------------------------------------------------------------
 
- ![Pagina do personagem](/public/print-page.png)
+ ![Pagina dos gatos](/public/print-cats.png)
